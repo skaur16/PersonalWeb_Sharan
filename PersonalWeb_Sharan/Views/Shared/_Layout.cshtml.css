@@ -1,0 +1,130 @@
+﻿/* Existing code */
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+.navbar-brand {
+    color: #e0e0e0 !important; /* Light text */
+    font-size: 1.2rem; /* Font size */
+}
+
+.nav-link {
+    color: #e0e0e0 !important; /* Light text */
+    font-size: 1rem; /* Font size */
+}
+
+    .nav-link:hover {
+        color: #007bff !important; /* Highlight on hover */
+    }
+
+.navbar-toggler {
+    border-color: #e0e0e0; /* Light border for toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28224, 224, 224, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav {
+    flex-grow: 1; /* Allow the navbar to grow */
+    justify-content: center; /* Center the navbar items */
+}
+
+a {
+  color: #0077cc;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+/* New media queries */
+@media (max-width: 576px) {
+  a.navbar-brand {
+    font-size: 0.8rem;
+  }
+
+  .btn-primary {
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  a.navbar-brand {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+  }
+
+  .footer {
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  a.navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .btn-primary {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  a.navbar-brand {
+    font-size: 1.4rem;
+  }
+
+  .btn-primary {
+    font-size: 1.4rem;
+  }
+
+  .footer {
+    line-height: 70px;
+  }
+}

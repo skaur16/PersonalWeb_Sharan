@@ -1,0 +1,259 @@
+﻿@{
+    ViewData["Title"] = "Sharandeep Kaur";
+}
+
+<style>
+    /* Web View Styles (Dark Theme) */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: #e0e0e0;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .section {
+        margin-bottom: 30px;
+        page-break-inside: avoid;
+    }
+
+        .section h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+        .skills-list span {
+            background-color: #333333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #e0e0e0;
+        }
+
+    .project-links a {
+        margin-right: 10px;
+    }
+
+    .btn-outline-primary {
+        color: #007bff;
+        border-color: #007bff;
+    }
+
+        .btn-outline-primary:hover {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+    a {
+        color: #007bff;
+    }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    /* PDF-specific styles */
+    .pdf-content {
+        background-color: white !important;
+        color: #0000FF !important;
+    }
+
+        .pdf-content .section h2 {
+            color: #0000FF !important;
+            border-bottom-color: #0000FF !important;
+        }
+
+        .pdf-content .skills-list span {
+            background-color: #f8f9fa !important;
+            color: #0000FF !important;
+            border: 1px solid #dee2e6 !important;
+        }
+
+        .pdf-content a {
+            color: #0000FF !important;
+            text-decoration: underline !important;
+        }
+
+        .pdf-content .btn-outline-primary {
+            color: #0000FF !important;
+            border-color: #0000FF !important;
+        }
+</style>
+
+<body>
+    <div class="container">
+        <!-- PDF Download Button -->
+        <div class="text-center mb-4">
+            <button id="downloadPdf" class="btn btn-primary">Download as PDF</button>
+        </div>
+
+        <!-- Title Section -->
+        <div class="text-center mb-4">
+            <h1>Sharandeep Kaur</h1>
+            <h3>Android Developer</h3>
+        </div>
+
+        <!-- Header Section -->
+        <div class="section">
+            <h2>Contact Information</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Phone:</strong> (+1) 519-710-4377</p>
+                    <p><strong>Email:</strong> <a href="mailto:me.sharandeepkaur16@gmail.com">me.sharandeepkaur16@gmail.com</a></p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>GitHub:</strong> <a href="https://github.com/skaur16" target="_blank">github.com/skaur16</a></p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sharandeep-kaur-skaur16/" target="_blank">linkedin.com/in/sharandeep-kaur-skaur16</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <h4>Technical Skills:</h4>
+                <span>Kotlin</span> |
+                <span>Jetpack Compose</span> |
+                <span>Android Development</span> |
+                <span>Firebase</span> |
+                <span>Github</span> |
+                <span>MVVM</span> |
+                <span>Retrofit</span> |
+                <span>Postman</span> |
+                <span>REST API</span> |
+                <span>Room DB</span> |
+                <span>Json</span> |
+                <span>Gson</span> |
+                <span>Dagger Hilt</span> |
+                <span>Dependency Injection</span>
+            </div>
+            <div class="skills-list mt-3">
+                <h4>Soft Skills:</h4>
+                <span>Communication</span> |
+                <span>English Proficiency</span> |
+                <span>Leadership</span> |
+                <span>Teamwork</span>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="section">
+            <h2>Experience</h2>
+            <h4>The Streamliners / Android Intern</h4>
+            <p><strong>Duration:</strong> April 2024 to June 2024</p>
+            <p>
+                Worked on real-time projects under proper guidance and supervision. The job included working on documentation, planning, and execution of code.
+            </p>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section">
+            <h2>Projects</h2>
+            <div class="project-links">
+                <h4>ShyamBakers Application</h4>
+                <p>An Inventory Management Application that helps to keep a record of stock and profit & loss status.</p>
+                <a href="https://github.com/The-Streamliners/ShyamBakers" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+            </div>
+            <div class="project-links mt-3">
+                <h4>MyChat Application</h4>
+                <p>An application designed using MVVM, facilitating individuals for the exchange of data in the form of text and images.</p>
+                <a href="https://github.com/skaur16/MyChat" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+            </div>
+            <div class="project-links mt-3">
+                <h4>MyGemini Application</h4>
+                <p>A replica of the popular Gemini tool from Google, developed using the Retrofit library. It provides corresponding answers to user queries provided as input.</p>
+                <a href="https://github.com/skaur16/MyGemini" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Bachelor in Computer Applications (BCA)</strong><br />
+                    Maharaja Ganga Singh University (2020 - 2023)
+                </li>
+                <li>
+                    <strong>Android Certification</strong><br />
+                    Ubuy Academy, Jaipur (November 2023 - March 2024)
+                </li>
+            </ul>
+        </div>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+        document.getElementById('downloadPdf').addEventListener('click', function() {
+            // Get the element to print
+            const element = document.querySelector('.container');
+
+            // Clone the element to avoid modifying the original
+            const clonedElement = element.cloneNode(true);
+
+            // Remove the download button from the clone
+            const downloadBtn = clonedElement.querySelector('#downloadPdf');
+            if (downloadBtn) {
+                downloadBtn.parentNode.removeChild(downloadBtn);
+            }
+
+            // Add PDF-specific class for blue text
+            clonedElement.classList.add('pdf-content');
+
+            // Create a temporary container for PDF generation
+            const tempContainer = document.createElement('div');
+            tempContainer.style.position = 'absolute';
+            tempContainer.style.left = '-9999px';
+            tempContainer.appendChild(clonedElement);
+            document.body.appendChild(tempContainer);
+
+            // Options for PDF generation
+            const opt = {
+                margin: 10,
+                filename: 'Sharandeep_Kaur_Resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: {
+                    scale: 2,
+                    backgroundColor: 'white',
+                    logging: true,
+                    useCORS: true
+                },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+
+            // Generate PDF
+            html2pdf()
+                .from(clonedElement)
+                .set(opt)
+                .save()
+                .then(() => {
+                    // Clean up
+                    document.body.removeChild(tempContainer);
+                })
+                .catch(err => {
+                    console.error('Error generating PDF:', err);
+                    document.body.removeChild(tempContainer);
+                });
+        });
+    </script>
+</body>
+ 

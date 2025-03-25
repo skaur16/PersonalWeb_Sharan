@@ -1,0 +1,103 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    margin-right: 20px;
+}
+
+.interest-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+}
+
+.android-developer-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.android-developer-text {
+    flex: 1;
+}
+
+.interest-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.interest-text {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.interest-section.reverse {
+    flex-direction: row-reverse;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .android-developer-section, .interest-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image,
+    .interest-image {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .interest-section.reverse {
+        flex-direction: column;
+    }
+}

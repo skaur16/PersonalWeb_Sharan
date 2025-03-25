@@ -1,0 +1,164 @@
+﻿@{
+    ViewData["Title"] = "Sharan :)";
+}
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0; /* Light text */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            background-color: #1e1e1e;
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007bff;
+            margin-right: 20px;
+        }
+
+        .interest-icon {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .android-developer-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .android-developer-text {
+            flex: 1;
+        }
+
+        .interests-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .interest-card {
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 10px;
+            background-color: #252525;
+            transition: transform 0.3s ease;
+        }
+
+            .interest-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+            }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+
+</style>
+
+<body>
+    <div class="container">
+        <!-- Heading -->
+        <h1>Sharan :)</h1>
+        <br />
+        <br />
+        <!-- Image and Android Developer Section -->
+        <div class="android-developer-section">
+            <!-- Image -->
+            <img src="~/images/profile.jpg" alt="Profile Picture" class="profile-image">
+
+            <!-- Android Developer Text -->
+            <div class="android-developer-text">
+                <h3>Android Developer</h3>
+                <p>
+                    A real-world problem solver, who loves building technical solutions to the issues an individual faces every day. The end goal is to make 
+                    life easier, with the enhancement in technology. My tech stack stands for expertise in Kotlin and Jetpack Compose, while I am open to learning 
+                    anything that falls my way.
+                </p>
+            </div>
+        </div>
+        <br />
+        
+        <!-- Areas of Interest Heading -->
+        <h2>Areas of Interest</h2>
+
+        <!-- Interests Container -->
+        <div class="interests-container">
+            <!-- Psychology Card -->
+            <div class="interest-card">
+                <img src="./images/psychology.jpeg" alt="Psychology" class="interest-icon">
+                <h3>Psychology Enthusiast</h3>
+                <p>A certified Counsellor and guide in General Psychology.</p>
+                <p>I am passionate about helping people on the emotional grounds, being empathatic and generally 
+                    a good listener.</p>
+            </div>
+
+            <!-- Bookworm Card -->
+            <div class="interest-card">
+                <img src="./images/books.jpeg" alt="Book Lover" class="interest-icon">
+                <h3>BookWorm</h3>
+                <p>Non-Fiction is my type.</p>
+                <p>I believe in growing by reading. The books I have read so far include Atomic Habits,
+                    The Power of Positive Thinking, The Subtle Art, A book about Hope, Rich Dad Poor Dad,
+                    Psychology of Money etc. My favourite author is Mark Manson.</p>
+            </div>
+
+            <!-- Travel & Music Card -->
+            <div class="interest-card">
+                <img src="./images/travel.jpeg" alt="Travel & Music" class="interest-icon">
+                <h3>Travel & Music</h3>
+                <p>Explore is my core.</p>
+                <p>Music and traveling form the best combination. I like visiting new places and embracing the 
+                    new adventures.It is an ideal way to grow internally and strengthen the self esteem. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>

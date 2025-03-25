@@ -1,0 +1,57 @@
+﻿@model PersonalWeb_Sharan.Models.CommentViewModel
+
+@{
+    ViewData["Title"] = "Create Comment";
+}
+
+<!-- Link to External CSS -->
+<link href="~/css/Commentcss.css" rel="stylesheet" />
+
+<h1>Add a Comment</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" class="form-control" id="Name" name="NewComment.Name" value="@Model.NewComment.Name" />
+        @Html.ValidationMessageFor(m => m.NewComment.Name, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        <label for="Text">Comment</label>
+        <textarea class="form-control" id="Text" name="NewComment.Text">@Model.NewComment.Text</textarea>
+        @Html.ValidationMessageFor(m => m.NewComment.Text, "", new { @class = "text-danger" })
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+<h2 style="color:blue">Reviews</h2>
+<ul class="reviews">
+    @foreach (var comment in Model.Comments)
+    {
+        <li>
+            @comment.Name - @comment.Text 
+
+            <button class="reviews" onclick="confirmDelete(@comment.Id)">Delete</button>
+        </li>
+    }
+</ul>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.9/dist/sweetalert2.min.js"></script>
+    <script>
+        function confirmDelete(commentId) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = '/Comment/Delete/' + commentId; // redirect to Delete action
+                }
+            });
+        }
+    </script>
+}
